@@ -1,4 +1,6 @@
 # ESP_nRF_Relay
+
+[![Join the chat at https://gitter.im/dobrMAN/ESP_nRF_Relay](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dobrMAN/ESP_nRF_Relay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Реле для управления освещением на базе ESP8266 и nRF24L01+
 
 Релейная часть программно аппартного комплекса для управления освещением или другими нагрузками.
