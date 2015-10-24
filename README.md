@@ -1,6 +1,7 @@
 # ESP_nRF_Relay
 
 [![Join the chat at https://gitter.im/dobrMAN/ESP_nRF_Relay](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dobrMAN/ESP_nRF_Relay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Реле для управления освещением на базе ESP8266 и nRF24L01+
 
 Релейная часть программно аппартного комплекса для управления освещением или другими нагрузками.
@@ -20,4 +21,3 @@
 + AC/DC - http://www.ebay.com/sch/i.html?_odkw=nRF24l01+smd&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR8.TRC2.A0.H0.XAC%2FDC+5v.TRS0&_nkw=AC%2FDC+5v&_sacat=0
 
 + И разная мелочевка.
-
