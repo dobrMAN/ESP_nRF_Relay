@@ -1,4 +1,4 @@
-update=23.10.2015 19:51:10
+update=24.10.2015 21:53:17
 last_client=kicad
 [pcbnew]
 version=1
@@ -59,3 +59,5 @@ LibName30=contrib
 LibName31=valves
 LibName32=nrf24l01p_smd
 LibName33=Conn_PWR
+[general]
+version=1
