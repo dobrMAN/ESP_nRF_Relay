@@ -1,4 +1,4 @@
-update=25.10.2015 14:01:00
+update=25.10.2015 14:05:33
 last_client=kicad
 [pcbnew]
 version=1
@@ -24,7 +24,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=Libs
+LibDir=Relay_WiFi_nRF24_Libs
 [eeschema/libraries]
 LibName1=Relay_WiFi_nRF24-rescue
 LibName2=power
