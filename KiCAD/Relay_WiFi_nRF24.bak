@@ -32,7 +32,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:nrf24l01p_smd
 LIBS:Conn_PWR
-LIBS:Relay_WiFi_nRF24-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
