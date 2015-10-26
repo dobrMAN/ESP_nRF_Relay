@@ -1,0 +1,133 @@
+
+(rules PCB Relay_WiFi_nRF24
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 23)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 500.0)
+    (clear 500.2)
+    (clear 250.0 (type smd_to_turn_gap))
+    (clear 125.0 (type smd_smd))
+    (clear 260.2 (type Tonko_Tonko))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1300:1000_um"
+    (shape
+      (circle F.Cu 1300.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1300.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_1300:1000_um" "Via[0-1]_1300:1000_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-kicad_default" "Via[0-1]_1300:1000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-Tolsto" "Via[0-1]_889:635_um" Tolsto
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-Tolsto" "Via[0-1]_1300:1000_um" Tolsto
+  )
+  (via 
+    "Via[0-1]_889:635_um-Tonko" "Via[0-1]_889:635_um" Tonko
+  )
+  (via 
+    "Via[0-1]_1300:1000_um-Tonko" "Via[0-1]_1300:1000_um" Tonko
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    Tolsto "Via[0-1]_1300:1000_um-Tolsto"
+  )
+  (via_rule
+    Tonko "Via[0-1]_889:635_um-Tonko"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND VCC "Net-(R6-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Tolsto
+    "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(IC1-Pad4)" "Net-(IC1-Pad6)" "Net-(P2-Pad1)" "Net-(P2-Pad2)" "Net-(R1-Pad2)"
+    (clearance_class Tolsto)
+    (via_rule Tolsto)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Tonko
+    "Net-(C1-Pad2)" "Net-(IC1-Pad1)" "Net-(JP1-Pad2)" "Net-(P1-Pad1)" "Net-(P1-Pad2)" "Net-(U1-Pad13)" "Net-(U1-Pad11)" "Net-(U1-Pad10)"
+    "Net-(U1-Pad9)" "Net-(U1-Pad5)" "Net-(U1-Pad7)" "Net-(U3-Pad8)" "Net-(U3-Pad9)" "Net-(R5-Pad2)"
+    (clearance_class Tonko)
+    (via_rule Tonko)
+    (rule
+      (width 260.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
