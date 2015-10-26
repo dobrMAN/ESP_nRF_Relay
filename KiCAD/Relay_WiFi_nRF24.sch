@@ -271,6 +271,28 @@ F 3 "" H 9150 4300 60  0000 C CNN
 	1    9150 4300
 	-1   0    0    1   
 $EndComp
+$Comp
+L R R6
+U 1 1 562E5413
+P 4675 3825
+F 0 "R6" V 4755 3825 50  0000 C CNN
+F 1 "10k" V 4675 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4605 3825 30  0001 C CNN
+F 3 "" H 4675 3825 30  0000 C CNN
+	1    4675 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 562E56EC
+P 2100 2550
+F 0 "R5" V 2180 2550 50  0000 C CNN
+F 1 "10k" V 2100 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2030 2550 30  0001 C CNN
+F 3 "" H 2100 2550 30  0000 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2575 6175 5025 6175
 Wire Wire Line
@@ -281,12 +303,7 @@ Connection ~ 3075 6175
 Wire Wire Line
 	3950 2175 3950 6175
 Wire Wire Line
-	2075 2175 3950 2175
-Connection ~ 3575 6175
-Wire Wire Line
-	2075 2175 2075 3175
-Wire Wire Line
-	2075 2925 2250 2925
+	2100 2175 3950 2175
 Connection ~ 3950 6175
 Wire Wire Line
 	7300 5450 7300 6025
@@ -295,9 +312,9 @@ Wire Wire Line
 Wire Wire Line
 	7800 6025 7800 5500
 Wire Wire Line
-	7800 6025 9350 6025
+	9350 6025 7800 6025
 Wire Wire Line
-	9350 6025 9350 5850
+	9350 5850 9350 6025
 Wire Wire Line
 	7800 4700 7800 4850
 Wire Wire Line
@@ -363,9 +380,6 @@ Wire Wire Line
 	1850 3025 1850 6225
 Connection ~ 2475 6225
 Wire Wire Line
-	2075 3175 2250 3175
-Connection ~ 2075 2925
-Wire Wire Line
 	2275 5775 2275 4825
 Wire Wire Line
 	2275 4825 2400 4825
@@ -408,7 +422,7 @@ Wire Wire Line
 Wire Wire Line
 	5425 3225 3400 3225
 Wire Wire Line
-	5425 2775 3400 2775
+	3400 2775 5425 2775
 Wire Wire Line
 	3400 2775 3400 2925
 Wire Wire Line
@@ -437,7 +451,7 @@ Wire Wire Line
 	2975 4250 2975 5325
 Connection ~ 2975 5325
 Wire Wire Line
-	9350 4150 2675 4150
+	2675 4150 9350 4150
 Wire Wire Line
 	2675 4150 2675 5775
 Connection ~ 2675 5775
@@ -447,4 +461,19 @@ Connection ~ 3550 2775
 Wire Wire Line
 	2950 3925 2950 4150
 Connection ~ 2950 4150
+Wire Wire Line
+	4825 3825 5075 3825
+Connection ~ 5075 3825
+Wire Wire Line
+	4525 3825 4350 3825
+Connection ~ 4350 3825
+Wire Wire Line
+	2250 2925 2250 2175
+Wire Wire Line
+	2100 2400 2100 2175
+Connection ~ 2250 2175
+Wire Wire Line
+	2100 2700 2100 3175
+Wire Wire Line
+	2100 3175 2250 3175
 $EndSCHEMATC

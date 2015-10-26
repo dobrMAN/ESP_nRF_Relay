@@ -1,0 +1,55 @@
+;
+SIGNAL '(export' 
+ (version D);
+SIGNAL '(date' 
+ "23.10.2015 19:59:26");
+SIGNAL '(comp' 
+ (ref U1);
+SIGNAL '(comp' 
+ (ref U3);
+SIGNAL '(comp' 
+ (ref JP1);
+SIGNAL '(comp' 
+ (ref U4);
+SIGNAL '(comp' 
+ (ref R4);
+SIGNAL '(comp' 
+ (ref R2);
+SIGNAL '(comp' 
+ (ref R1);
+SIGNAL '(comp' 
+ (ref R3);
+SIGNAL '(comp' 
+ (ref C1);
+SIGNAL '(comp' 
+ (ref U2);
+SIGNAL '(comp' 
+ (ref C2);
+SIGNAL '(comp' 
+ (ref IC1);
+SIGNAL '(comp' 
+ (ref P2);
+SIGNAL '(comp' 
+ (ref P1);
+SIGNAL '(comp' 
+ (ref P3);
+SIGNAL '(library' 
+ (logical esp8266-esp-03);
+SIGNAL '(library' 
+ (logical nrf24l01p_smd);
+SIGNAL '(library' 
+ (logical Conn_PWR);
+SIGNAL '(library' 
+ (logical regul);
+SIGNAL '(uri' 
+ "C:\\Program Files\\KiCad\\share\\kicad\\library\\regul.lib"));
+SIGNAL '(library' 
+ (logical conn);
+SIGNAL '(uri' 
+ "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"));
+SIGNAL '(library' 
+ (logical Relay_WiFi_nRF24-rescue);
+SIGNAL '(library' 
+ (logical device);
+SIGNAL '(uri' 
+ "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")));
