@@ -34,3 +34,5 @@
 + AC/DC - http://www.ebay.com/sch/i.html?_odkw=nRF24l01+smd&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR8.TRC2.A0.H0.XAC%2FDC+5v.TRS0&_nkw=AC%2FDC+5v&_sacat=0
 
 + И разная мелочевка.
+
+
